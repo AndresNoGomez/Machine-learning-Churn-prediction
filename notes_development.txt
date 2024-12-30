@@ -1,0 +1,114 @@
+# THE DATASET AFTER DELETING THE UNNECESARY COLUMNS:
+--------------------------------------------------------------------
+# Index 0: Referred a Friend | Type: String3 | Min: N/A | Max: N/A
+# Index 1: Number of Referrals | Type: Int64 | Min: 0 | Max: 11
+# Index 2: Tenure in Months | Type: Int64 | Min: 1 | Max: 72
+# Index 3: Offer | Type: String7 | Min: N/A | Max: N/A
+# Index 4: Phone Service | Type: String3 | Min: N/A | Max: N/A
+# Index 5: Avg Monthly Long Distance Charges | Type: Float64 | Min: 0.0 | Max: 49.99
+# Index 6: Multiple Lines | Type: String3 | Min: N/A | Max: N/A
+# Index 7: Internet Service | Type: String3 | Min: N/A | Max: N/A
+# Index 8: Internet Type | Type: String15 | Min: N/A | Max: N/A
+# Index 9: Avg Monthly GB Download | Type: Int64 | Min: 0 | Max: 94
+# Index 10: Online Security | Type: String3 | Min: N/A | Max: N/A
+# Index 11: Online Backup | Type: String3 | Min: N/A | Max: N/A
+# Index 12: Device Protection Plan | Type: String3 | Min: N/A | Max: N/A
+# Index 13: Premium Tech Support | Type: String3 | Min: N/A | Max: N/A
+# Index 14: Streaming TV | Type: String3 | Min: N/A | Max: N/A
+# Index 15: Streaming Movies | Type: String3 | Min: N/A | Max: N/A
+# Index 16: Streaming Music | Type: String3 | Min: N/A | Max: N/A
+# Index 17: Unlimited Data | Type: String3 | Min: N/A | Max: N/A
+# Index 18: Contract | Type: String15 | Min: N/A | Max: N/A
+# Index 19: Paperless Billing | Type: String3 | Min: N/A | Max: N/A
+# Index 20: Payment Method | Type: String15 | Min: N/A | Max: N/A
+# Index 21: Monthly Charge | Type: Float64 | Min: 18.25 | Max: 123.084
+# Index 22: Total Regular Charges | Type: Float64 | Min: 18.8 | Max: 8684.8
+# Index 23: Total Refunds | Type: Float64 | Min: 0.0 | Max: 49.79
+# Index 24: Total Extra Data Charges | Type: Float64 | Min: 0.0 | Max: 6477.0
+# Index 25: Total Long Distance Charges | Type: Float64 | Min: 0.0 | Max: 3564.72
+# Index 26: Gender | Type: String7 | Min: N/A | Max: N/A
+# Index 27: Age | Type: Int64 | Min: 19 | Max: 80
+# Index 28: Under 30 | Type: String3 | Min: N/A | Max: N/A
+# Index 29: Senior Citizen | Type: String3 | Min: N/A | Max: N/A
+# Index 30: Married | Type: String3 | Min: N/A | Max: N/A
+# Index 31: Dependents | Type: String3 | Min: N/A | Max: N/A
+# Index 32: Number of Dependents | Type: Int64 | Min: 0 | Max: 9
+# Index 33: City | Type: String31 | Min: N/A | Max: N/A
+# Index 34: Zip Code | Type: Int64 | Min: 90001 | Max: 96150
+# Index 35: Latitude | Type: Float64 | Min: 32.555828 | Max: 41.962127
+# Index 36: Longitude | Type: Float64 | Min: -124.301372 | Max: -114.192901
+# Index 37: Population | Type: Int64 | Min: 11 | Max: 105285
+# Index 38: Churn Value | Type: Int64 | Min: 0 | Max: 1
+# Index 39: CLTV | Type: Int64 | Min: 2003 | Max: 6500
+# Index 40: Total Customer Svc Requests | Type: Int64 | Min: 0 | Max: 9
+# Index 41: Product/Service Issues Reported | Type: Int64 | Min: 0 | Max: 6
+
+
+######################    APPROACH 1    ##########################
+
+DELETE -> # City 
+DELETE -> # Zip Code 
+DELETE -> # Latitude 
+DELETE -> # Longitude 
+
+METHODS:
+BINARY VARIABLES: 0 / 1
+MEAN-STD: variables with unknown future range
+MAX-MIN: variables with normally stable range
+MAPPING-0/1: label encoding 
+
+# THE DATASET:
+--------------------------------------------------------------------
+# Index 0: Referred a Friend | Type: BINARY
+# Index 1: Number of Referrals | Type: MEAN-STD
+# Index 2: Tenure in Months | Type: MEAN-STD
+# Index 3: Offer | Type: MAPPING-0/1
+# Index 4: Phone Service | Type: BINARY
+# Index 5: Avg Monthly Long Distance Charges | Type: MEAN-STD
+# Index 6: Multiple Lines | Type: BINARY
+# Index 7: Internet Service | Type: BINARY
+# Index 8: Internet Type | Type: MAPPING-0/1
+# Index 9: Avg Monthly GB Download | Type: MEAN-STD
+# Index 10: Online Security | Type: BINARY
+# Index 11: Online Backup | Type: BINARY
+# Index 12: Device Protection Plan | Type: BINARY
+# Index 13: Premium Tech Support | Type: BINARY
+# Index 14: Streaming TV | Type: BINARY
+# Index 15: Streaming Movies | Type: BINARY
+# Index 16: Streaming Music | Type: BINARY
+# Index 17: Unlimited Data | Type: BINARY
+# Index 18: Contract | Type: MAPPING-0/1
+# Index 19: Paperless Billing | Type: BINARY
+# Index 20: Payment Method | Type: MAPPING-0/1
+# Index 21: Monthly Charge | Type: MEAN-STD
+# Index 22: Total Regular Charges | Type: MEAN-STD
+# Index 23: Total Refunds | Type: MEAN-STD
+# Index 24: Total Extra Data Charges | Type: MEAN-STD
+# Index 25: Total Long Distance Charges | Type: MEAN-STD
+# Index 26: Gender | Type: BINARY
+# Index 27: Age | Type: MIN-MAX
+# Index 28: Under 30 | Type: BINARY
+# Index 29: Senior Citizen | Type: BINARY
+# Index 30: Married | Type: BINARY
+# Index 31: Dependents | Type: BINARY
+# Index 32: Number of Dependents | Type: MEAN-STD
+# Index 33: Population | Type: MIN-MAX
+# Index 34: CLTV | Type: MEAN-STD
+# Index 35: Total Customer Svc Requests | Type: MEAN-STD
+# Index 36: Product/Service Issues Reported | Type: MEAN-STD
+------------------------------------------------------------------------
+TARGET -> Churn Value | Type: BINARY
+
+
+
+
+######################    APPROACH 2    #########################
+
+
+
+
+
+
+
+
+

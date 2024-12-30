@@ -1,2 +1,1 @@
-# Machine-learning-Churn-prediction
-Project for the subject Machine Learning I
+# ML1-Project

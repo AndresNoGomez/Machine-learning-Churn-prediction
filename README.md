@@ -6,7 +6,11 @@ For greater detail and understanding of the observed behaviors, **8 different ar
 
 Finally, an approach and a model are selected to perform the **final model training** based on the best results obtained. This decision considers both the **performance** of the model and the **dimensionality reduction** and interpretability of the data used.
 
+More detailed information about implementation decissions, code structure and results obtaiend is available on the Project Memory file.
+
 Please note that the development of this project was limited to the scope of an academic exercise. As such, the project has not undergone further refinement or optimization beyond this point.
+
+**Authors:** Pablo Páramo Telle, Pablo Fuertes Chemes, Andrés Nó Gómez.
 
 
 
